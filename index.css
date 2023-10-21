@@ -1,0 +1,87 @@
+:root {
+  --shadow:
+    7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0);
+
+  --mainfont: 'EB Garamond', serif;
+  --secondary-font: 'Playpen Sans', cursive;
+  --paragrapht-font: 'Sometype Mono', monospace;
+
+}
+
+/* nav*/
+.navbar {
+  box-shadow: var(--shadow);
+  font-family: var(--paragrapht-font);
+}
+
+/*home desktop*/
+.hero {
+  display: flex;
+  margin: 50px;
+  border-radius: 50px;
+  padding: 25px;
+  box-shadow: var(--shadow);
+}
+
+.hero_image {
+  flex: 1;
+}
+
+.hero_image img {
+  width: 75%;
+  border-radius: 50px;
+}
+
+.hero_text {
+  flex: 1;
+  margin-top: 50px;
+}
+
+.hero_text h1 {
+  font-family: var(--mainfont);
+}
+
+.hero_text h2 {
+  font-family: var(--secondary-font);
+}
+
+.hero_text p {
+  text-align: justify;
+  font-family: var(--paragrapht-font);
+}
+
+.hero_text button {
+  font-family: var(--paragrapht-font);
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: var(--shadow);
+  margin-right: 25px;
+}
+
+/*home tablet*/
+@media screen and (max-width:767px) {
+  .hero {
+    display: block;
+  }
+
+  .hero_image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .hero_text {
+    flex: 1;
+    margin-top: 50px;
+  }
+}
+
+/*about*/
