@@ -6,11 +6,16 @@
     inset 7px 7px 15px rgba(55, 84, 170, 0),
     inset -7px -7px 20px rgba(255, 255, 255, 0),
     0px 0px 4px rgba(255, 255, 255, 0);
-
+  --button-color: inset 3px 5px 5px 3px rgba(200, 229, 252, 0.9);
+  --color: #e3f2fd;
   --mainfont: 'EB Garamond', serif;
   --secondary-font: 'Playpen Sans', cursive;
   --paragrapht-font: 'Sometype Mono', monospace;
 
+}
+
+body {
+  background-color: var(--color);
 }
 
 /* nav*/
@@ -20,7 +25,8 @@
 }
 
 /*home desktop*/
-.hero {
+.hero,
+.about {
   display: flex;
   margin: 50px;
   border-radius: 50px;
@@ -28,26 +34,34 @@
   box-shadow: var(--shadow);
 }
 
+.hero {
+  flex-direction: row-reverse;
+}
+
 .hero_image {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero_image img {
-  width: 75%;
+  width: 50%;
   border-radius: 50px;
 }
 
 .hero_text {
   flex: 1;
-  margin-top: 50px;
 }
 
 .hero_text h1 {
   font-family: var(--mainfont);
+  margin-bottom: 50px;
 }
 
-.hero_text h2 {
+.hero_text h3 {
   font-family: var(--secondary-font);
+  margin-bottom: 25px;
 }
 
 .hero_text p {
@@ -57,12 +71,12 @@
 
 .hero_text button {
   font-family: var(--paragrapht-font);
-  background-color: white;
+  background-color: var(--color);
   border: none;
   border-radius: 15px;
-  padding: 5px;
-  box-shadow: var(--shadow);
-  margin: 5px;
+  padding: 7px;
+  box-shadow: var(--button-color);
+  margin: 10px;
 }
 
 /*home tablet*/
@@ -91,3 +105,10 @@
 }
 
 /*about*/
+.about_image {
+  flex: 1;
+}
+
+.about_text {
+  flex: 1;
+}
