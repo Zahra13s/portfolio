@@ -175,17 +175,17 @@
     width: 50%;
   }
 
-  .skills {
-    display: none;
-  }
 }
 
 /*about phone*/
 @media screen and (max-width:767px) {
-  .skills {
-    display: none;
+  .about {
+    display: block;
   }
 
+  .about_photo {
+    width: 100%;
+  }
 }
 
 /*projects*/
@@ -212,7 +212,19 @@
   font-size: 25px;
 }
 
-/*contact form*/
+/*projects tablet*/
+@media screen and (max-width:1023px) {
+  .card-body a {
+    font-size: 12px;
+  }
+}
+
+/*projects phone*/
+@media screen and (max-width:767px) {
+  .projcts {
+    display: block;
+  }
+}
 
 
 /*footer*/
