@@ -214,8 +214,8 @@
 
 /*footer*/
 footer {
-  box-shadow: var(--button-color);
-  margin: 20px;
+  margin: 50px;
   border-radius: 25px;
-  padding: 10px;
+  font-family: var(--paragrapht-font);
+  text-align: center;
 }
