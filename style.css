@@ -132,7 +132,8 @@
   font-family: var(--mainfont);
 }
 
-.about {
+.about,
+.projcts {
   margin: 50px;
 }
 
@@ -179,12 +180,36 @@
   }
 }
 
-/*home phone*/
+/*about phone*/
 @media screen and (max-width:767px) {
   .skills {
     display: none;
   }
 
+}
+
+/*projects*/
+.projects_header {
+  font-family: var(--mainfont);
+  text-align: center;
+}
+
+.projcts {
+  display: flex;
+}
+
+.card {
+  margin: 25px;
+}
+
+.list_group {
+  display: flex;
+  list-style: none;
+}
+
+.list_group_item {
+  padding-right: 15px;
+  font-size: 25px;
 }
 
 /*footer*/
