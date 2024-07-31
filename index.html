@@ -34,7 +34,7 @@
 <body>
   <!--nav-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid px-5">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,8 +61,30 @@
   <!--home-->
   <div class="hero" id="hero">
     <div class="hero_image">
-      <div class="image_frame">
-        <img src="./image/profile.png" alt="" class="profile_img">
+      <div class="skills d-flex flex-column align-items-center">
+
+        <div class="row">
+          <div class="col"><i class="fa-brands fa-html5" style="color: #DD4B25;"></i></div>
+          <div class="col"><i class="fa-brands fa-css3-alt" style="color: #254BDD;"></i></div>
+          <div class="col"><i class="fa-brands fa-js" style="color: #EFD81D;"></i></div>
+
+        </div>
+
+        <div class="row mt-2">
+          <div class="col"><i class="fa-brands fa-bootstrap" style="color: #7410F0;"></i></div>
+          <div class="col"><i class="fa-brands fa-mdb" style="color: #3584D3;"></i></div>
+          <div class="col"><i class="fa-brands fa-php" style="color: #7377AD;"></i></div>
+          <div class="col"><i class="fa-brands fa-laravel" style="color: #F72C1F;"></i></div>
+          <div class="col"><i class="fa-brands fa-java" style="color: #4F7E9C;"></i></div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col"><i class="fa-solid fa-c" style="color: #5B92C8;"><span class="fs-5">++</span></i></div>
+          <div class="col"><i class="fa-brands fa-github" style="color: #000000;"></i></div>
+          <div class="col"><i class="fa-brands fa-git-alt" style="color: #E84D31;"></i></div>
+        </div>
+        <div class="row mt-2"><h2 class="skill-header">My Skill</h2></div>
+
       </div>
     </div>
     <div class="hero_text">
@@ -113,7 +135,9 @@
 
   </div>
   <!--projects-->
-  <h2 class="projects_header" id="projects">My Projects</h2>
+  <div class="row">
+    <div class="col-10 offset-1">
+      <h2 class="projects_header" id="projects">My Projects</h2>
   <div class="projcts">
     <!--weather-->
     <div class="card rounded-5" style="width: 18rem;">
@@ -146,20 +170,74 @@
         <a href="https://zahraflowershop.netlify.app/" target="_blank" class="card-link">Launch</a>
       </div>
     </div>
-    <!--portfolio-->
+    <!--guess a number-->
     <div class="card rounded-5" style="width: 18rem;">
-      <img src="./image/portfolio.png" class="card-img-top" height="150px" alt="Chicago Skyscrapers" />
+      <img src="./image/guessanum.avif" class="card-img-top" height="150px" alt="Chicago Skyscrapers" />
       <div class="card-body">
         <h5 class="card-title">Portfolio</h5>
       </div>
       <ul class="list_group">
         <li class="list_group_item"><i class="fa-brands fa-html5"></i></li>
         <li class="list_group_item"><i class="fa-brands fa-css3"></i></li>
+        <li class="list_group_item"><i class="fa-brands fa-square-js"></i></li>
       </ul>
       <div class="card-body">
-        <a href="https://github.com/Zahra13s/portfolio" target="_blank" class="card-link">Source Code</a>
-        <a href="https://suthethnin.netlify.app/" target="_blank" class="card-link">Launch</a>
+        <a href="https://github.com/Zahra13s/Guess_a_number" target="_blank" class="card-link">Source Code</a>
+        <a href="https://guessanumberbyzahra.netlify.app" target="_blank" class="card-link">Launch</a>
       </div>
+    </div>
+
+       <!--Binge Worthy TV show-->
+       <div class="card rounded-5" style="width: 18rem;">
+        <img src="./image/HOD.avif" class="card-img-top" height="150px" alt="Chicago Skyscrapers" />
+        <div class="card-body">
+          <h5 class="card-title">Binge Worthy TV Show</h5>
+        </div>
+        <ul class="list_group">
+          <li class="list_group_item"><i class="fa-brands fa-html5"></i></li>
+          <li class="list_group_item"><i class="fa-brands fa-css3"></i></li>
+        </ul>
+        <div class="card-body">
+          <a href="https://github.com/Zahra13s/-Binge-Worthy-TV-Shows-Challenge" target="_blank" class="card-link">Source Code</a>
+          <a href="https://binge-worthy-tv-show.netlify.app/" target="_blank" class="card-link">Launch</a>
+        </div>
+      </div>
+
+             <!--Rock Paper Scissor-->
+             <div class="card rounded-5" style="width: 18rem;">
+              <img src="./image/rps.avif" class="card-img-top" height="150px" alt="Chicago Skyscrapers" />
+              <div class="card-body">
+                <h5 class="card-title">Rock Paper Scissor</h5>
+              </div>
+              <ul class="list_group">
+                <li class="list_group_item"><i class="fa-brands fa-html5"></i></li>
+                <li class="list_group_item"><i class="fa-brands fa-css3"></i></li>
+                <li class="list_group_item"><i class="fa-brands fa-square-js"></i></li>
+              </ul>
+              <div class="card-body">
+                <a href="https://github.com/Zahra13s/rock-paper-scissors" target="_blank" class="card-link">Source Code</a>
+                <a href="https://rockpaperscissorbyzahra.netlify.app/" target="_blank" class="card-link">Launch</a>
+              </div>
+            </div>
+
+              <!--Travel-->
+              <div class="card rounded-5" style="width: 18rem;">
+                <img src="./image/tripy.avif" class="card-img-top" height="150px" alt="Chicago Skyscrapers" />
+                <div class="card-body">
+                  <h5 class="card-title">Tripy</h5>
+                </div>
+                <ul class="list_group">
+                  <li class="list_group_item"><i class="fa-brands fa-html5"></i></li>
+                  <li class="list_group_item"><i class="fa-brands fa-css3"></i></li>
+                </ul>
+                <div class="card-body">
+                  <a href="https://github.com/Zahra13s/responsive_web" target="_blank" class="card-link">Source Code</a>
+                  <a href="https://traveltojapanbyzahra.netlify.app" target="_blank" class="card-link">Launch</a>
+                </div>
+              </div>
+  
+    <!-- projects end -->
+  </div>
     </div>
   </div>
   <!--footer-->

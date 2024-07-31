@@ -42,11 +42,13 @@
   align-items: center;
 }
 
-.hero_image img {
-  width: 75%;
-  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(200, 229, 252, 0.5));
+.skills i{
+  font-size: 50px;
 }
 
+.skill-header{
+  font-family: var(--paragrapht-font);
+}
 
 .hero_text {
   flex: 1;
@@ -169,6 +171,10 @@
   margin-top: 25px;
 }
 
+.contact-form{
+  font-family: var(--secondary-font);
+}
+
 /*about tablet*/
 @media screen and (max-width:1023px) {
   .about_photo img {
@@ -196,6 +202,8 @@
 
 .projcts {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
